@@ -1,0 +1,42 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Membership Form</title>
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+    <!-- membership.html -->
+    <form action="#" method="post" id="theForm">
+        <fieldset>
+		<legend>Create Your Membership</legend>
+            <p>Complete this form to calculate your membership.</p>
+			<hr>
+			<ul>
+				<li>10% discount for two or three years.</li>
+				<li>15% discount for 4 years.</li>
+				<li>20% discount for 5 or more years.</li>
+			</ul>
+			<div>
+			<label for="type">Type</label> 
+				<select name="type" id="type">
+					<option value="basic">Basic - $10.00</option>
+					<option value="premium">Premium - $15.00</option>
+					<option value="gold">Gold - $20.00</option>
+					<option value="platinum">Platinum - $25.00</option>
+				</select>
+			</div>
+			<div>
+				<label for="years">Years</label>
+				<input type="number" name="years" id="years" min="1" required>
+			</div>
+			<div>
+				<span id="heehhoo">Cost</span>
+				<span id="cost"></span>
+			</div>
+			<input class="calculate" type="submit" value="Calculate" id="submit">
+        </fieldset>
+    </form>
+    <script src="js/membership.js"></script>
+</body>
+</html>
